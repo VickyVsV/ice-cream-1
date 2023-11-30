@@ -199,3 +199,196 @@ address {
 .hero-container-img {
   /* position: absolute; */
 }
+
+/* -------------- DELIVERY ------------*/
+
+.delivery {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.delivery-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delivery-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.delivery-title {
+  color: #000;
+  font-family: Hind Madurai;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 25px;
+  margin-bottom: 9px;
+}
+
+.delivery-text {
+  width: 198px;
+  color: #000;
+  text-align: center;
+  font-family: Hind Madurai;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* -------------- DETAILS ------------*/
+
+.details {
+  background-color: #f2ceda4c;
+}
+
+.container-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.details-title {
+  color: #150101;
+  width: 349px;
+  font-family: Hind Madurai;
+  font-size: 44.2px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110.5%;
+  margin-bottom: 20px;
+}
+
+.details-text {
+  width: 442px;
+  color: #150101;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+/* -------------- PRODUCTS ------------*/
+
+.container-products {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  padding-top: 137px;
+}
+
+.products-text {
+  color: #150101;
+  font-family: Hind Madurai;
+  font-size: 44.2px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+}
+
+.products-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 39px;
+  margin-top: 64px;
+}
+
+.products-item {
+  margin-bottom: 50px;
+}
+
+.products-link {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.selected-list {
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.selected-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.selected-img {
+  width: 483px;
+}
+
+.selected-desc {
+  width: 454px;
+}
+
+.selected-desc-title {
+  color: #000;
+  font-family: Hind Madurai;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.selected-desc-spec {
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 28px;
+}
+
+.selected-desc-price {
+  color: #000;
+  font-family: Hind Madurai;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.selected-desc-price > span {
+  color: #000;
+  font-family: Hind Madurai;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration-line: strikethrough;
+}
+
+.products-btn {
+  border-radius: 5px;
+  background: #d64374;
+  width: 165px;
+  height: 49px;
+  color: #fafafa;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 16px;
+}
+/* --------------HEADER ------------*/
+/* --------------HEADER ------------*/
+/* --------------HEADER ------------*/
+/* --------------HEADER ------------*/
