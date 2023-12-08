@@ -1,21 +1,17 @@
 p,
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   margin: 0;
 }
 
 ul {
   margin: 0;
-  padding-left: 0;
+  padding: 0;
+  list-style: none;
 }
 
 body {
-  font-family: "Hind Madurai", sans-serif;
-  font-style: normal;
   margin: 0;
 }
 
@@ -25,57 +21,30 @@ image {
   height: auto;
 }
 
-address {
-  font-style: normal;
-}
-
-.link {
+a {
   text-decoration: none;
-  font-style: normal;
 }
 
-.list {
-  list-style: none;
-}
-
-.btn {
+button {
   cursor: pointer;
   font-family: inherit;
   border: transparent;
 }
 
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
 .container {
   width: 1125px;
-  padding-left: 15px;
-  padding-right: 15px;
+  outline: 2px solid red;
   margin-left: auto;
   margin-right: auto;
-  /* outline: 2px solid red; */
+  /* background-color: #69ad25; */
 }
 
-/* .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-} */
-
-/* --------------HEADER ------------*/
+/*------------ HEADER ---------*/
 
 .header {
-  background-color: rgba(242, 206, 218, 0.3);
   padding-top: 10px;
+  /* background-color: #F2CEDA; */
+  background-color: rgba(242, 206, 218, 0.3);
 }
 
 .header-container {
@@ -91,6 +60,7 @@ address {
 
 .header-nav-list {
   display: flex;
+  align-items: center;
   margin-left: 266px;
 }
 
@@ -99,7 +69,7 @@ address {
 }
 
 .header-nav-link {
-  color: #150101;
+  color: rgba(21, 1, 1, 0.6);
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -107,13 +77,18 @@ address {
   line-height: normal;
 }
 
-.btn-header {
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: #d23166;
+}
+
+.header-btn {
   width: 165px;
   height: 49px;
   border-radius: 5px;
   background: #d23166;
-  color: #fafafa;
 
+  color: #fafafa;
   font-family: Hind Madurai;
   font-size: 16px;
   font-style: normal;
@@ -121,20 +96,18 @@ address {
   line-height: normal;
 }
 
-/* -------------- HERO ------------*/
+/*------------ HERO ---------*/
+
 .hero {
-  background-color: #f2ceda4c;
-}
-.container-hero {
-  display: flex;
-  align-items: center;
-  /* padding-top: 12px; */
-  /* position: relative; */
+  background-color: rgba(242, 206, 218, 0.3);
 }
 
-/* .hero-container-about {
-  width: 665px;
-} */
+.hero-container {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 .hero-text {
   color: #0f0101;
@@ -149,36 +122,33 @@ address {
 
 .hero-title {
   width: 600px;
-  height: 130px;
   color: #0f0101;
   font-family: Fredoka One;
   font-size: 57.33px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: bold;
   line-height: 120.5%;
   margin-bottom: 35px;
 }
 
-.hero-title-span {
-  opacity: 0.9;
+.hero-title > span {
   color: #d23166;
   font-family: Fredoka One;
   font-size: 57.33px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: bold;
   line-height: 120.5%;
 }
 
 .hero-desc {
   width: 523px;
-  height: 78px;
   color: #0f0101;
+  opacity: 0.6;
   font-family: Hind Madurai;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
-  opacity: 0.6;
   margin-bottom: 50px;
 }
 
@@ -187,8 +157,8 @@ address {
   height: 49px;
   border-radius: 5px;
   background: #d23166;
-  color: #fafafa;
 
+  color: #fafafa;
   font-family: Hind Madurai;
   font-size: 16px;
   font-style: normal;
@@ -196,15 +166,11 @@ address {
   line-height: normal;
 }
 
-.hero-container-img {
-  /* position: absolute; */
-}
-
-/* -------------- DELIVERY ------------*/
+/*------------ DELIVERY ---------*/
 
 .delivery {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 
 .delivery-list {
@@ -215,9 +181,9 @@ address {
 
 .delivery-item {
   text-align: center;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
 }
 
 .delivery-title {
@@ -234,6 +200,7 @@ address {
 .delivery-text {
   width: 198px;
   color: #000;
+  opacity: 0.6;
   text-align: center;
   font-family: Hind Madurai;
   font-size: 14px;
@@ -242,21 +209,21 @@ address {
   line-height: normal;
 }
 
-/* -------------- DETAILS ------------*/
+/*------------ DETAILS ---------*/
 
 .details {
-  background-color: #f2ceda4c;
+  background-color: rgba(242, 206, 218, 0.3);
 }
 
-.container-details {
+.details-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .details-title {
-  color: #150101;
   width: 349px;
+  color: #150101;
   font-family: Hind Madurai;
   font-size: 44.2px;
   font-style: normal;
@@ -268,25 +235,36 @@ address {
 .details-text {
   width: 442px;
   color: #150101;
+  opacity: 0.6;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
-/* -------------- PRODUCTS ------------*/
+.details-btn {
+  width: 165px;
+  height: 49.135px;
+  border-radius: 5px;
+  background: #d64374;
 
-.container-products {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
+  color: #fafafa;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/*------------ PRODUCTS ---------*/
+
+.products {
   padding-top: 137px;
 }
 
-.products-text {
+.products-title {
   color: #150101;
   font-family: Hind Madurai;
   font-size: 44.2px;
@@ -294,22 +272,20 @@ address {
   font-weight: 600;
   line-height: normal;
   text-align: center;
+  margin-bottom: 64px;
 }
 
-.products-list {
+.products-names-list {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 39px;
-  margin-top: 64px;
-}
-
-.products-item {
   margin-bottom: 50px;
 }
 
-.products-link {
-  color: rgba(0, 0, 0, 0.6);
+.products-names-link {
+  color: #000;
+  opacity: 0.6;
   font-family: Roboto;
   font-size: 18px;
   font-style: normal;
@@ -317,36 +293,30 @@ address {
   line-height: normal;
 }
 
-.selected-list {
-  /* display: flex;
-  flex-direction: column; */
-}
-
-.selected-item {
+.products-selected-item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
-.selected-img {
-  width: 483px;
-}
-
-.selected-desc {
+.products-selected-desc {
   width: 454px;
 }
 
-.selected-desc-title {
+.products-selected-desc-title {
   color: #000;
   font-family: Hind Madurai;
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-bottom: 10px;
 }
 
-.selected-desc-spec {
+.products-selected-desc-spec {
+  width: 454px;
   color: #000;
+  opacity: 0.7;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -355,7 +325,7 @@ address {
   margin-bottom: 28px;
 }
 
-.selected-desc-price {
+.products-selected-desc-price {
   color: #000;
   font-family: Hind Madurai;
   font-size: 26px;
@@ -364,21 +334,23 @@ address {
   line-height: normal;
 }
 
-.selected-desc-price > span {
+.products-selected-desc-price > span {
   color: #000;
+  opacity: 0.7;
   font-family: Hind Madurai;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  text-decoration-line: strikethrough;
+  text-decoration-line: line-through;
 }
 
-.products-btn {
-  border-radius: 5px;
-  background: #d64374;
+.products-selected-btn {
   width: 165px;
   height: 49px;
+  border-radius: 5px;
+  background: #d64374;
+
   color: #fafafa;
   text-align: center;
   font-family: Roboto;
@@ -386,9 +358,77 @@ address {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin-top: 16px;
+  margin-top: 30px;
 }
-/* --------------HEADER ------------*/
-/* --------------HEADER ------------*/
-/* --------------HEADER ------------*/
-/* --------------HEADER ------------*/
+
+/*------------ DOWNLOAD ---------*/
+
+.download {
+  background-color: rgba(242, 206, 218, 0.3);
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.download-container {
+  display: flex;
+  align-items: center;
+  gap: 134px;
+}
+
+.download-title {
+  width: 666px;
+  color: #000;
+  font-family: Roboto;
+  font-size: 44.2px;
+  font-style: normal;
+  font-weight: bolt;
+  line-height: normal;
+  margin-bottom: 31px;
+}
+
+.download-text {
+  width: 607px;
+  color: #0f0101;
+  opacity: 0.7;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.18px;
+  margin-bottom: 31px;
+}
+
+.download-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+  color: #000;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.download-item-icon {
+  background-color: #fff;
+  border-radius: 3px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-app-list{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/*------------ HEADER ---------*/
+/*------------ HEADER ---------*/
+/*------------ HEADER ---------*/
+/*------------ HEADER ---------*/
