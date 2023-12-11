@@ -1,0 +1,67 @@
+/* Вариант 1: Плавное появление снизу вверх */
+.animate1 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Вариант 2: Мигание цветом */
+.animate2 {
+  color: #d23166;
+  animation: colorBlink 1s infinite alternate;
+}
+
+@keyframes colorBlink {
+  to {
+      color: #e46791;
+  }
+}
+
+/* Вариант 3: Расширение */
+.animate3 {
+  transform-origin: center;
+  animation: scaleUp 1s forwards;
+}
+
+@keyframes scaleUp {
+  from {
+      transform: scale(0);
+  }
+  to {
+      transform: scale(1);
+  }
+}
+
+/* Вариант 4: Вращение */
+.animate4 {
+  animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+/* Вариант 5: Пульсация размера */
+.animate5 {
+  color: #ee6995;
+  animation: pulseSize 1s infinite alternate;
+}
+
+@keyframes pulseSize {
+  to {
+    color: #d23166;
+      transform: scale(1.2);
+  }
+}

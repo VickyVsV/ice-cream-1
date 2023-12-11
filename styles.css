@@ -33,7 +33,7 @@ button {
 
 .container {
   width: 1125px;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
   margin-left: auto;
   margin-right: auto;
   /* background-color: #69ad25; */
@@ -130,10 +130,9 @@ button {
   line-height: normal;
 }
 
-.header-btn:hover{
+/* .header-btn:hover{
   box-shadow: inset 100px 0 0 0 #d23166;
-  
-}
+} */
 
 /*------------ HERO ---------*/
 
@@ -697,3 +696,19 @@ button {
   margin-left: -7px;
 }
 
+/* ---------- THANKS ------------ */
+
+.thanks{
+  padding-top: 135px;
+  padding-bottom: 130px;
+  margin: auto;
+}
+
+.thanks-title {
+  font-size: 36px;
+  color: #d23166; /* Цвет текста */
+  text-align: center;
+  margin-top: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Цвет тени */
+  /* transition: color 0.3s ease-in-out; */
+}
